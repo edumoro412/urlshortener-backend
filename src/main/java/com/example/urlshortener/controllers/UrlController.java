@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.CorsOrigin;
 
 
 
+@CorsOrigin(origins = "*")
 @RestController //Indica que esta clase expone endpoints REST (HTTP( GET, POST, etc.))
 @RequestMapping("/api") //todas las rutas comienzan con /api
 public class UrlController {
